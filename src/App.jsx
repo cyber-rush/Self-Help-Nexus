@@ -1,9 +1,14 @@
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
 const App = () => {
   return (
-    <div className='bg-red-500'>
-      App
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/self-help-nexus" element={<Home />} />
+        </Routes>
+      </Router>
+    </>
   )
 }
 
